@@ -1,4 +1,4 @@
-![SessionNext](session_next.png)
+![SessionNext](https://github.com/bobhageman/session_next/raw/main/session_next.png)
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
