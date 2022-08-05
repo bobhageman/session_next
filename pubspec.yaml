@@ -1,7 +1,7 @@
 name: session_next
 description: Having a session inside your app made easy
 version: 0.0.1
-homepage:
+homepage: https://github.com/bobhageman/session_next
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
