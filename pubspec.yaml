@@ -1,6 +1,6 @@
 name: session_next
-description: Having a session inside your app made easy
-version: 0.0.1
+description: Having a session inside your app made easy. Features in-memory storage and a built in expiry mechanism.
+version: 0.0.1+2
 homepage: https://github.com/bobhageman/session_next
 
 environment:
