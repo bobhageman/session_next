@@ -1,3 +1,6 @@
+## 0.0.1+3
+- updated pubspec
+
 ## 0.0.1+2
 - updated readme
 
