@@ -29,6 +29,11 @@ class SessionNext {
     _vars[name] = value;
   }
 
+  /// Store all key/value pairs of [items] in session storage
+  void setAll<T>(Map<String, T> items){
+    _vars.addAll(items);
+  }
+
   /// Get [name] from session storage
   T? get<T>(String name) {
     if (!containsKey(name)) {
@@ -118,12 +123,12 @@ class SessionNext {
     _timer = Timer.periodic(
       Duration(seconds: _sessionTimeOut),
       (_) {
-        _handleExpiry();
+        handleExpiry();
       },
     );
   }
 
-  void _handleExpiry() {
+  void handleExpiry() {
     // Call the expiry handling function.
     if (_onExpire != null) {
       _onExpire!();

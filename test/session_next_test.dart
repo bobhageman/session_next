@@ -33,6 +33,10 @@ void main() {
     // remove all keys
     sessionOne.removeAll();
     expect(sessionOne.containsKey('anObject'), false);
+
+    // add multiple items at once
+    sessionOne.setAll(obj);
+    expect(sessionOne.containsKey('prop1'), true);
   });
 
   test('Can expire', () async {

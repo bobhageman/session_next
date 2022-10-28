@@ -22,6 +22,7 @@ var session = SessionNext();
 // set some session vars
 session.set('key','value');
 session.set('key-2', {'prop1': 'val1'});
+session.setAll({'key-3' : 'anotherValue', 'key-4', 'xyz'});
 
 // to get them
 var keyString = session.get<String>('key');   // returns a casted String
@@ -40,7 +41,7 @@ var session = SessionNext();
 
 session.start(      
     sessionTimeOut: 5,                      // timeout in seconds
-    onExpire: () => { _handleExpiry() },      // what to do when it expires
+    onExpire: () => { _handleExpiry() },    // what to do when it expires
 );
 
 // optionally: pause the session
